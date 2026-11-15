@@ -1,0 +1,1562 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue name="Gateborn" id="a338-8d14-e119-6242" battleScribeVersion="2.03" gameSystemId="sys-74a6-c7c2-cb22-1ca2" gameSystemRevision="2" library="false" revision="1" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink name="War Tyrant" id="9d53-7fc9-5968-d6e2" hidden="false" import="true" targetId="0101-287d-fb9a-a5ee" type="selectionEntry"/>
+    <entryLink name="Hunter Tyrant" id="e67c-ba12-5864-4b02" hidden="false" import="true" targetId="3484-e494-adcf-2acc" type="selectionEntry"/>
+    <entryLink name="Swarmers" id="82a2-e6d1-b274-0af7" hidden="false" import="true" targetId="21c2-b38e-f71c-1cca" type="selectionEntry"/>
+    <entryLink name="Shamblers" id="7fdb-aa92-51cf-aae9" hidden="false" import="true" targetId="b33b-1d41-dfda-c7ce" type="selectionEntry"/>
+    <entryLink name="Rippers" id="7871-f389-335d-2437" hidden="false" import="true" targetId="e082-4e52-b5cc-bf5e" type="selectionEntry"/>
+    <entryLink name="Blood Knights" id="2d9a-a64f-9827-c3a1" hidden="false" import="true" targetId="a714-2f90-6607-7769" type="selectionEntry"/>
+    <entryLink name="Pterrorhawks" id="8e95-3d99-bb06-e3e4" hidden="false" import="true" targetId="9621-13d8-c7a2-2fc2" type="selectionEntry"/>
+    <entryLink name="The Harbingers" id="1f5e-4b25-5315-b5e1" hidden="false" import="true" targetId="8170-4081-8ae9-8ba2" type="selectionEntry"/>
+    <entryLink name="Shifterbeast" id="36ad-c535-34c1-7641" hidden="false" import="true" targetId="1989-e0c0-585c-3fc2" type="selectionEntry"/>
+    <entryLink name="Uynworm" id="c7e4-2371-3fab-54b7" hidden="false" import="true" targetId="d831-c697-0cd5-2ac9" type="selectionEntry"/>
+    <entryLink name="Bilespewers" id="aa94-ef12-c071-db1c" hidden="false" import="true" targetId="3fa8-9182-a286-70ec" type="selectionEntry"/>
+    <entryLink name="Dammed Shrine" id="5d83-d914-3951-d6a4" hidden="false" import="true" targetId="3472-7bff-c587-aec1" type="selectionEntry"/>
+    <entryLink name="Psionic Tyrant" id="c1f5-41be-c051-7d6c" hidden="false" import="true" targetId="7993-ad00-0dc3-c766" type="selectionEntry"/>
+    <entryLink name="Gateborn Hero" id="d554-cd0f-cd5e-8830" hidden="false" import="true" targetId="f4f0-66a2-3c40-c9b6" type="selectionEntry"/>
+    <entryLink name="Bitty" id="5f06-d337-c3ca-8889" hidden="false" import="true" targetId="d552-0d68-1370-8ae1" type="selectionEntry"/>
+    <entryLink name="Itty" id="a312-2152-cb6a-dcbb" hidden="false" import="true" targetId="752e-6512-2d7a-48c9" type="selectionEntry"/>
+  </entryLinks>
+  <selectionEntries>
+    <selectionEntry name="Battle size" id="ad76-5e0e-e9d7-eb40" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Configuration" id="f801-6699-3c99-5040" hidden="false" primary="true" targetId="c708-30bf-1ea7-3e08"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="7fb6-3002-bdda-2b97" field="selections" includeChildSelections="false" scope="force" shared="true" type="min" value="1"/>
+        <constraint id="7ad2-5670-a9ea-e8a5" field="selections" includeChildSelections="false" scope="force" shared="true" type="max" value="1"/>
+      </constraints>
+      <entryLinks>
+        <entryLink name="Battle Size" id="b1f0-996c-5725-6e5e" hidden="false" import="true" targetId="76ac-074f-ad45-08e2" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+    <selectionEntry name="Detachment" id="d6bc-d6dd-5937-20e6" hidden="false" import="true" type="upgrade">
+      <constraints>
+        <constraint id="cd6b-0fad-b6ef-ecfc" field="selections" includeChildSelections="true" scope="force" shared="true" type="min" value="1"/>
+        <constraint id="2c8e-d801-37bb-8307" field="selections" includeChildSelections="true" scope="force" shared="true" type="max" value="1"/>
+      </constraints>
+      <entryLinks>
+        <entryLink name="Detachment" id="67a4-0976-974e-dcdf" hidden="false" import="true" targetId="36cf-28eb-c446-0566" type="selectionEntryGroup"/>
+      </entryLinks>
+    </selectionEntry>
+  </selectionEntries>
+  <sharedProfiles>
+    <profile name="Riftwalker" id="fd29-5173-a2a2-fb8e" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+      <characteristics>
+        <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model has a 7+ Shielded Save.</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+  <sharedRules>
+    <rule name="Tear Open Reality" id="978e-aa39-2176-9390" hidden="false">
+      <description>Objective markers you control can become Rifts into Gatespace. 
+
+
+During the deploy armies step before any player has deployed any units, open a Rift on one Objective marker in your deployment zone. This Rift cannot be closed even if you do not control the objective in your deployment zone. Note: If that Objective marker is destroyed for any reason then that Rift is considered to have closed and is removed from the objective.
+At the start the Strategy step, choose one Objective marker you control which does not have a Rift, and open a Rift on it. If you lose control of an Objective marker which has a Rift, that Rift is considered to have closed and is removed from the Objective marker.</description>
+    </rule>
+  </sharedRules>
+  <sharedSelectionEntries>
+    <selectionEntry name="War Tyrant" id="0101-287d-fb9a-a5ee" hidden="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink name="Monster" id="c9b7-5aa2-c509-493b" primary="false" targetId="c038-626e-763d-0e2f"/>
+        <categoryLink name="Prime" id="ea29-d696-dd0c-bb48" primary="true" targetId="0558-6d8b-f5d1-cca3"/>
+        <categoryLink name="Gateborn" id="03bf-9e71-df81-057b" primary="false" targetId="9dbc-c39e-ceac-480a"/>
+        <categoryLink name="General" id="b56c-73cd-021a-35a3" primary="false" targetId="58f5-a263-2ca2-8342"/>
+        <categoryLink name="Flying" id="1a64-9aff-f9f5-7cb7" primary="false" targetId="1c71-822b-5355-6e2b"/>
+        <categoryLink name="Tyrant" id="f1c8-23d0-cffa-4f8a" primary="false" targetId="c94a-5f1d-a238-92ca"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="10a6-c868-db09-c245" value="370"/>
+      </costs>
+      <entryLinks>
+        <entryLink name="Riftwalker" id="92c4-0eb7-826c-8271" hidden="false" import="true" targetId="3e3b-a98f-d10a-27e9" type="selectionEntryGroup"/>
+        <entryLink name="General" id="eba3-6a13-11f8-9019" hidden="false" import="true" targetId="daf6-3b79-75b1-6b0b" type="selectionEntry"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Riftwalker" id="5431-312c-32c9-bb86" hidden="false" targetId="fd29-5173-a2a2-fb8e" type="profile"/>
+        <infoLink name="Tear Open Reality" id="6cc5-aac7-bc47-d0a1" hidden="false" targetId="978e-aa39-2176-9390" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="War Tyrant" id="0c54-4f70-f7f4-948e" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">8&quot;</characteristic>
+            <characteristic name="H" typeId="d29d-cf75-fc2d-34a4">16</characteristic>
+            <characteristic name="T" typeId="450-a17e-9d5e-29da">9</characteristic>
+            <characteristic name="RS/MS" typeId="58d2-b879-49c7-43bc">6+/3+</characteristic>
+            <characteristic name="L" typeId="bef7-942a-1a23-59f8">6+</characteristic>
+            <characteristic name="C" typeId="ce19-d3eb-6d64-97de">4</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Maddening Rage (Aura):" id="e776-1368-61c8-37f8" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Whenever an enemy unit is activated within 9&quot; of this model, that unit must make a Leadership test. If it fails then that enemy unit must make an assault action targeting this unit. If it cannot do so then that unit is considered Broken.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Unnatural Speed" id="bf4d-4a3f-53b7-5d64" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit has the Fights First ability.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Melee Weapon" id="6990-7d3f-126d-4090" hidden="false">
+          <constraints>
+            <constraint id="9868-e545-6689-053f" field="selections" scope="parent" shared="true" type="max" value="1"/>
+            <constraint id="615e-fa46-e301-8dd1" field="selections" scope="parent" shared="true" type="min" value="1"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry name="Realm Breaker" id="603f-839c-cd2f-6c70" hidden="false" import="true" type="upgrade">
+              <profiles>
+                <profile name="Realm Breaker Great Axe" id="87bd-463d-90df-edb1" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
+                    <characteristic name="MS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">12</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-4</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">4</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Heavy, Cleave</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry name="Greatsword" id="13b2-92c7-798c-aeaa" hidden="false" import="true" type="upgrade">
+              <profiles>
+                <profile name="Greatsword" id="06d4-1c56-fa29-4a8d" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">10</characteristic>
+                    <characteristic name="MS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Heavy</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry name="Void Claws" id="c093-4a23-44cc-57fe" hidden="false" import="true" type="upgrade">
+              <profiles>
+                <profile name="Void Claws" id="0073-6e0d-2f47-24e3" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">16</characteristic>
+                    <characteristic name="MS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Sustained Hits 1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry name="Hunter Tyrant" id="3484-e494-adcf-2acc" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Monster" id="9896-5dbe-846f-4b4d" primary="false" targetId="c038-626e-763d-0e2f"/>
+        <categoryLink name="Prime" id="0192-4968-2efa-2ed1" primary="true" targetId="0558-6d8b-f5d1-cca3"/>
+        <categoryLink name="Gateborn" id="40b7-a393-8888-bf4c" primary="false" targetId="9dbc-c39e-ceac-480a"/>
+        <categoryLink name="General" id="3723-88bf-418e-faa1" primary="false" targetId="58f5-a263-2ca2-8342"/>
+        <categoryLink name="Tyrant" id="721b-fe02-aa4d-494a" primary="false" targetId="c94a-5f1d-a238-92ca"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="10a6-c868-db09-c245" value="350"/>
+      </costs>
+      <entryLinks>
+        <entryLink name="General" id="b8bb-83d5-5bcd-2661" hidden="false" import="true" targetId="daf6-3b79-75b1-6b0b" type="selectionEntry"/>
+        <entryLink name="Riftwalker" id="298e-f0bb-eecf-966e" hidden="false" import="true" targetId="3e3b-a98f-d10a-27e9" type="selectionEntryGroup"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Riftwalker" id="5830-b36b-c7e6-eeb2" hidden="false" targetId="fd29-5173-a2a2-fb8e" type="profile"/>
+        <infoLink name="Tear Open Reality" id="e328-c03d-75d3-82cd" hidden="false" targetId="978e-aa39-2176-9390" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Hunter Tyrant" id="5ce5-2881-a8ed-cba5" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
+            <characteristic name="H" typeId="d29d-cf75-fc2d-34a4">10</characteristic>
+            <characteristic name="T" typeId="450-a17e-9d5e-29da">8</characteristic>
+            <characteristic name="RS/MS" typeId="58d2-b879-49c7-43bc">5+/3+</characteristic>
+            <characteristic name="L" typeId="bef7-942a-1a23-59f8">6+</characteristic>
+            <characteristic name="C" typeId="ce19-d3eb-6d64-97de">4</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Unnatural Speed" id="c0b7-d8a0-2278-97b0" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit has the Fights First ability.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Whirling Blur" id="8aeb-70a6-cf9a-b752" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Whenever an enemy model targets this unit with a ranged or melee weapon, those weapons gain the [Heavy] keyword.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Melee Weapon" id="89b3-bfcd-368c-8c42" hidden="false">
+          <constraints>
+            <constraint id="75b6-c6ca-9f4a-d670" field="selections" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry name="Dual swords" id="40e7-e2b6-8f0a-668c" hidden="false" import="true" type="upgrade">
+              <profiles>
+                <profile name="Dual Swords" id="9e12-5221-decc-78f4" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">10</characteristic>
+                    <characteristic name="MS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Dual-Mounted</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry name="Void Claws" id="df6e-799e-3cc8-d2f6" hidden="false" import="true" type="upgrade">
+              <profiles>
+                <profile name="Void Claws" id="3b1f-dc9f-05c4-4c51" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">16</characteristic>
+                    <characteristic name="MS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Impact, Sustained Hits 1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry name="Greatspear" id="2aee-5862-aaf5-da38" hidden="false" import="true" type="upgrade">
+              <profiles>
+                <profile name="Greatspear" id="dc69-1701-d6e9-5495" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+                    <characteristic name="MS" typeId="95d1-95f-45b4-11d6">3+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Impact, Precise</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry name="Swarmers" id="21c2-b38e-f71c-1cca" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Troops" id="111d-ba54-fd30-34bf" primary="true" targetId="c9f9-68da-aaa8-0023"/>
+        <categoryLink name="Gateborn" id="56d2-292e-3e9c-5aab" primary="false" targetId="9dbc-c39e-ceac-480a"/>
+        <categoryLink name="Infantry" id="d046-f3e8-5095-b4e5" primary="false" targetId="f38e-18f6-4d87-3d0f"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="10a6-c868-db09-c245" value="40"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Tear Open Reality" id="b327-20a9-22ec-4601" hidden="false" targetId="978e-aa39-2176-9390" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Spawn of the beyond" id="a817-96f0-fe06-c0ce" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this unit is within 6&quot; of one or more friendly Tyrant models, the Control characteristic of models in this unit is 1.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit Composition" id="1ae1-8ab6-d28a-14d8" hidden="false">
+          <constraints>
+            <constraint id="2e58-4eeb-8879-2167-min" field="selections" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="2e58-4eeb-8879-2167-max" field="selections" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry name="10" id="b776-efe3-05e0-ade1" hidden="false" import="true" type="upgrade">
+              <selectionEntries>
+                <selectionEntry name="Swarmers" id="5990-e322-446e-b6b1" hidden="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint id="300a-77b0-47ac-81ea" field="selections" scope="parent" shared="true" type="min" value="10"/>
+                    <constraint id="9b57-6650-3ed4-0beb" field="selections" scope="parent" shared="true" type="max" value="10"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Swarmers" id="ab36-dc48-7620-e055" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
+                      <characteristics>
+                        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">8&quot;</characteristic>
+                        <characteristic name="H" typeId="d29d-cf75-fc2d-34a4">1</characteristic>
+                        <characteristic name="T" typeId="450-a17e-9d5e-29da">2</characteristic>
+                        <characteristic name="RS/MS" typeId="58d2-b879-49c7-43bc">8+/8+</characteristic>
+                        <characteristic name="L" typeId="bef7-942a-1a23-59f8">12+</characteristic>
+                        <characteristic name="C" typeId="ce19-d3eb-6d64-97de">0</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Claws and Teeth" id="3b72-2902-f912-318c" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
+                        <characteristic name="MS" typeId="95d1-95f-45b4-11d6">7+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">2</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry name="20" id="8a74-e205-5b93-315a" hidden="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier field="10a6-c868-db09-c245" type="increment" value="40"/>
+              </modifiers>
+              <selectionEntries>
+                <selectionEntry name="Swarmers" id="d0ee-7add-832f-7370" hidden="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint id="a197-5821-9b95-e76a" field="selections" scope="parent" shared="true" type="min" value="20"/>
+                    <constraint id="6eec-3256-7ac9-5042" field="selections" scope="parent" shared="true" type="max" value="20"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Swarmers" id="5b8c-a647-78ef-7c7e" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
+                      <characteristics>
+                        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">8&quot;</characteristic>
+                        <characteristic name="H" typeId="d29d-cf75-fc2d-34a4">1</characteristic>
+                        <characteristic name="T" typeId="450-a17e-9d5e-29da">2</characteristic>
+                        <characteristic name="RS/MS" typeId="58d2-b879-49c7-43bc">8+/8+</characteristic>
+                        <characteristic name="L" typeId="bef7-942a-1a23-59f8">12+</characteristic>
+                        <characteristic name="C" typeId="ce19-d3eb-6d64-97de">0</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Claws and Teeth" id="3eac-db56-fedd-d174" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
+                        <characteristic name="MS" typeId="95d1-95f-45b4-11d6">7+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">2</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry name="Shamblers" id="b33b-1d41-dfda-c7ce" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Troops" id="383d-fb40-6259-829e" primary="true" targetId="c9f9-68da-aaa8-0023"/>
+        <categoryLink name="Gateborn" id="7987-3ac3-918b-990a" primary="false" targetId="9dbc-c39e-ceac-480a"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="10a6-c868-db09-c245" value="75"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Resistance " id="2fe3-472e-962f-2bc0" hidden="false" targetId="9bf4-280f-bbe2-6fbb" type="rule">
+          <modifiers>
+            <modifier field="name" join=" " type="append" value="6+"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Tear Open Reality" id="a054-3f33-9e72-724d" hidden="false" targetId="978e-aa39-2176-9390" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Undead Hordes" id="af5d-b2db-1394-dea3" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Each time a Shambler model in this unit makes an attack that destroys an enemy model (excluding Monster and Vehicle models), after this unit has resolved its attacks, you can return one destroyed Poxwalker model to this unit.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry name="Shambler" id="8943-0ef5-7e9a-d330" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="13f7-ce58-491d-d460" field="selections" scope="parent" shared="true" type="max" value="10"/>
+            <constraint id="443c-1558-d8fb-9333" field="selections" scope="parent" shared="true" type="min" value="10"/>
+          </constraints>
+          <profiles>
+            <profile name="Shamblers" id="8b11-58c1-a10f-7ccd" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
+              <characteristics>
+                <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+                <characteristic name="H" typeId="d29d-cf75-fc2d-34a4">2</characteristic>
+                <characteristic name="T" typeId="450-a17e-9d5e-29da">3</characteristic>
+                <characteristic name="RS/MS" typeId="58d2-b879-49c7-43bc">6+/7+</characteristic>
+                <characteristic name="L" typeId="bef7-942a-1a23-59f8">7+</characteristic>
+                <characteristic name="C" typeId="ce19-d3eb-6d64-97de">1</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Shredded Limbs" id="a6dc-e31b-63a0-8723" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
+                <characteristic name="MS" typeId="95d1-95f-45b4-11d6">6+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Lucky Shot</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Bone Fragments" id="c1b0-c28d-5e2e-bd5a" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
+              <characteristics>
+                <characteristic name="Range" typeId="9896-9419-16a1-92fc">6&quot;</characteristic>
+                <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+                <characteristic name="RS" typeId="94d-8a98-cf90-183e">6+</characteristic>
+                <characteristic name="S" typeId="2229-f494-25db-c5d3">3</characteristic>
+                <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+                <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Small Arms, Pistol</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry name="Rippers" id="e082-4e52-b5cc-bf5e" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Troops" id="6868-97a4-07bb-8fb9" primary="true" targetId="c9f9-68da-aaa8-0023"/>
+        <categoryLink name="Gateborn" id="9205-9093-98e4-8ab6" primary="false" targetId="9dbc-c39e-ceac-480a"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="10a6-c868-db09-c245" value="50"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Tear Open Reality" id="19d1-9746-b900-ddee" hidden="false" targetId="978e-aa39-2176-9390" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Lingering Corruption" id="4bf2-0e03-4b72-553c" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">At the end of the round, if this unit is within range of an objective marker you control, that objective marker remains under your control, even if you have no models within range of it, until your opponent controls it at the start or end of any turn.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry name="Unit Composition" id="b652-26e9-9966-0b1d" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="edc1-9c73-d80b-4ca1-min" field="selections" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="edc1-9c73-d80b-4ca1-max" field="selections" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry name="Ripper with Unnatural Limbs" id="3ba4-8f2e-010c-513d" hidden="false" import="true" type="upgrade">
+              <constraints>
+                <constraint id="b3a6-14d5-1f37-5630" field="selections" scope="parent" shared="true" type="max" value="7"/>
+                <constraint id="66fb-6dc2-e56a-f136" field="selections" scope="parent" shared="true" type="min" value="7"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Extra Attacks" id="d7f7-abf8-20f8-d45a" hidden="false" targetId="115b-79dc-f723-d761" type="rule"/>
+              </infoLinks>
+              <modifiers>
+                <modifier field="b3a6-14d5-1f37-5630" type="decrement" value="1">
+                  <conditions>
+                    <condition childId="92fa-8382-e91f-dc7c" field="selections" scope="parent" shared="true" type="atLeast" value="1"/>
+                  </conditions>
+                </modifier>
+                <modifier field="66fb-6dc2-e56a-f136" type="decrement" value="1">
+                  <conditions>
+                    <condition childId="92fa-8382-e91f-dc7c" field="selections" scope="parent" shared="true" type="atLeast" value="1"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <profiles>
+                <profile name="Unnatural Limbs" id="f2dd-5fca-e8f9-5512" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
+                    <characteristic name="MS" typeId="95d1-95f-45b4-11d6">5+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">2</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+                  </characteristics>
+                </profile>
+                <profile name="Unnatural Limbs" id="7bf1-a677-6344-fc55" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">D4</characteristic>
+                    <characteristic name="MS" typeId="95d1-95f-45b4-11d6">6+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Extra Attacks</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Ripper" id="0fce-8863-16a3-025b" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
+                  <characteristics>
+                    <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">8&quot;</characteristic>
+                    <characteristic name="H" typeId="d29d-cf75-fc2d-34a4">2</characteristic>
+                    <characteristic name="T" typeId="450-a17e-9d5e-29da">4</characteristic>
+                    <characteristic name="RS/MS" typeId="58d2-b879-49c7-43bc">6+/5+</characteristic>
+                    <characteristic name="L" typeId="bef7-942a-1a23-59f8">9+</characteristic>
+                    <characteristic name="C" typeId="ce19-d3eb-6d64-97de">1</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Ripper with Grotesque Mutations" id="92fa-8382-e91f-dc7c" hidden="false">
+              <constraints>
+                <constraint id="ee0a-644d-3c53-952e" field="selections" scope="parent" shared="true" type="max" value="1"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry name="Scything Bone" id="19a9-923a-8656-2954" hidden="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint id="ba82-9f05-cb42-2480" field="selections" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Extra Attacks" id="9fee-b0d9-89c8-eacf" hidden="false" targetId="115b-79dc-f723-d761" type="rule"/>
+                  </infoLinks>
+                  <profiles>
+                    <profile name="Scything Bone" id="1815-9e98-a6aa-f419" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                        <characteristic name="MS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-3</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Impact</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Ripper" id="83e9-82bf-aa19-1541" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
+                      <characteristics>
+                        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">8&quot;</characteristic>
+                        <characteristic name="H" typeId="d29d-cf75-fc2d-34a4">2</characteristic>
+                        <characteristic name="T" typeId="450-a17e-9d5e-29da">4</characteristic>
+                        <characteristic name="RS/MS" typeId="58d2-b879-49c7-43bc">6+/5+</characteristic>
+                        <characteristic name="L" typeId="bef7-942a-1a23-59f8">9+</characteristic>
+                        <characteristic name="C" typeId="ce19-d3eb-6d64-97de">1</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Unnatural Limbs" id="8b4b-57f5-c52e-c62c" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">D4</characteristic>
+                        <characteristic name="MS" typeId="95d1-95f-45b4-11d6">6+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Extra Attacks</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry name="Talons" id="d159-5238-d5a5-e3b4" hidden="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint id="66ed-6808-d887-224c" field="selections" scope="parent" shared="true" type="max" value="1"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink name="Extra Attacks" id="9cb1-210b-56e3-efb5" hidden="false" targetId="115b-79dc-f723-d761" type="rule"/>
+                    <infoLink name="Extra Attacks" id="a13a-5a39-3f47-4109" hidden="false" targetId="115b-79dc-f723-d761" type="rule"/>
+                  </infoLinks>
+                  <profiles>
+                    <profile name="Talons" id="de26-2be8-b75d-0f87" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
+                        <characteristic name="MS" typeId="95d1-95f-45b4-11d6">5+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-1</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+                      </characteristics>
+                    </profile>
+                    <profile name="Unnatural Limbs" id="44a6-91ae-c359-e184" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">D4</characteristic>
+                        <characteristic name="MS" typeId="95d1-95f-45b4-11d6">5+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">4</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">1</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Extra Attacks</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Ripper" id="3abc-6e9f-acc0-0165" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
+                      <characteristics>
+                        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">8&quot;</characteristic>
+                        <characteristic name="H" typeId="d29d-cf75-fc2d-34a4">2</characteristic>
+                        <characteristic name="T" typeId="450-a17e-9d5e-29da">4</characteristic>
+                        <characteristic name="RS/MS" typeId="58d2-b879-49c7-43bc">6+/5+</characteristic>
+                        <characteristic name="L" typeId="bef7-942a-1a23-59f8">9+</characteristic>
+                        <characteristic name="C" typeId="ce19-d3eb-6d64-97de">1</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Unnatural Limbs" id="ce7f-aad5-1891-1ba2" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">D4</characteristic>
+                        <characteristic name="MS" typeId="95d1-95f-45b4-11d6">6+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Extra Attacks</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry name="Psionic Tyrant" id="7993-ad00-0dc3-c766" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Monster" id="1a11-ab6b-22e0-fccc" primary="false" targetId="c038-626e-763d-0e2f"/>
+        <categoryLink name="Prime" id="4d55-0366-8f1a-e483" primary="true" targetId="0558-6d8b-f5d1-cca3"/>
+        <categoryLink name="General" id="470c-61e8-2034-2459" primary="false" targetId="58f5-a263-2ca2-8342"/>
+        <categoryLink name="Gateborn" id="dfca-3d56-b851-a75c" primary="false" targetId="9dbc-c39e-ceac-480a"/>
+        <categoryLink name="Accultist" id="0a37-2ff1-9ee3-6a14" primary="false" targetId="20eb-d8a2-d24f-0b0f"/>
+        <categoryLink name="Tyrant" id="4775-6017-14a3-7637" primary="false" targetId="c94a-5f1d-a238-92ca"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="10a6-c868-db09-c245" value="370"/>
+      </costs>
+      <entryLinks>
+        <entryLink name="General" id="0846-23dd-5533-04ee" hidden="false" import="true" targetId="daf6-3b79-75b1-6b0b" type="selectionEntry"/>
+        <entryLink name="Riftwalker" id="baa8-cb2f-1eca-c1d2" hidden="false" import="true" targetId="3e3b-a98f-d10a-27e9" type="selectionEntryGroup"/>
+      </entryLinks>
+      <infoLinks>
+        <infoLink name="Riftwalker" id="d93c-ed21-3b3f-2479" hidden="false" targetId="fd29-5173-a2a2-fb8e" type="profile"/>
+        <infoLink name="Accultist" id="ac55-4f70-1d01-b5cb" hidden="false" targetId="0c1d-87ca-215c-e482" type="rule">
+          <modifiers>
+            <modifier field="name" join=" " type="append" value="3"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Tear Open Reality" id="b125-e07d-759d-b756" hidden="false" targetId="978e-aa39-2176-9390" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Psionic Demon" id="2c63-8f78-764f-e4b0" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">8&quot;</characteristic>
+            <characteristic name="H" typeId="d29d-cf75-fc2d-34a4">10</characteristic>
+            <characteristic name="T" typeId="450-a17e-9d5e-29da">8</characteristic>
+            <characteristic name="RS/MS" typeId="58d2-b879-49c7-43bc">3+/5+</characteristic>
+            <characteristic name="L" typeId="bef7-942a-1a23-59f8">6+</characteristic>
+            <characteristic name="C" typeId="ce19-d3eb-6d64-97de">4</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Unnatural Speed" id="689f-33d3-10e6-c765" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit has the Fights First ability.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="The might of the infinite mind" id="c7d7-ba1e-4c35-96c3" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per round, when an enemy unit attempts to manifest a spell within 18&quot;, after the enemy unit has rolled this unit rolls 1D8 and subtracts that roll from the enemy units manifestation value.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Staff" id="c784-41cc-0466-ad51" hidden="false">
+          <constraints>
+            <constraint id="8923-7a95-ea25-f199" field="selections" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="e7ea-2956-717b-fb43" field="selections" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry name="Staff of Change" id="abf7-a165-68cc-36fb" hidden="false" import="true" type="upgrade">
+              <profiles>
+                <profile name="➤Staff of Change - Sweep" id="9724-b09b-d16e-df36" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">8</characteristic>
+                    <characteristic name="MS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Heavy</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="➤Staff of Change - Strike" id="31a2-92a8-ccc7-8dc2" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+                    <characteristic name="MS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">10</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Heavy, Cleave</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Staff of Change" id="35b0-d70e-9bd2-4774" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">18&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">D8</characteristic>
+                    <characteristic name="RS" typeId="94d-8a98-cf90-183e">5+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry name="Lance of Desolation" id="aa35-974e-fed7-8204" hidden="false" import="true" type="upgrade">
+              <profiles>
+                <profile name="Lance of Desolation" id="63e8-93bc-f6e0-c5e8" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
+                  <characteristics>
+                    <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                    <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
+                    <characteristic name="MS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                    <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
+                    <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                    <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+                    <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+                  </characteristics>
+                </profile>
+                <profile name="➤Lance of Desolation" id="0da5-ffcb-eefc-09c6" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">2D8</characteristic>
+                    <characteristic name="RS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">7</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Ignore Cover, Envelop, Psionic, Fatal Wounds</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="➤Lance of Desolation - Focused" id="1fd1-fe23-2c7d-5afa" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
+                  <characteristics>
+                    <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+                    <characteristic name="A" typeId="3bb-c35f-f54-fb08">D8</characteristic>
+                    <characteristic name="RS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+                    <characteristic name="S" typeId="2229-f494-25db-c5d3">9</characteristic>
+                    <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+                    <characteristic name="D" typeId="a354-c1c8-a745-f9e3">3</characteristic>
+                    <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Psionic, Fatal Wounds</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry name="The Harbingers" id="8170-4081-8ae9-8ba2" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Prime" id="5044-1c14-cd97-dede" primary="true" targetId="0558-6d8b-f5d1-cca3"/>
+        <categoryLink name="General" id="a47b-ffa3-7efe-bc75" primary="false" targetId="58f5-a263-2ca2-8342"/>
+        <categoryLink name="Gateborn" id="3dcb-c008-8449-6b65" primary="false" targetId="9dbc-c39e-ceac-480a"/>
+        <categoryLink name="Accultist" id="0c26-96cc-0406-131f" primary="false" targetId="20eb-d8a2-d24f-0b0f"/>
+        <categoryLink name="Infantry" id="e8ba-c208-2948-6e8f" primary="false" targetId="f38e-18f6-4d87-3d0f"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="10a6-c868-db09-c245" value="130"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Tear Open Reality" id="35ff-ee6a-b1f6-6334" hidden="false" targetId="978e-aa39-2176-9390" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="The walking end" id="c80e-a79d-5c99-0346" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Friendly Gateborn units can be set up within 3&quot; of this unit but cannot be set up within 9&quot; of any enemy units.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="The Harbinger" id="3027-8995-8cca-f11c" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">8&quot;</characteristic>
+            <characteristic name="H" typeId="d29d-cf75-fc2d-34a4">6</characteristic>
+            <characteristic name="T" typeId="450-a17e-9d5e-29da">1</characteristic>
+            <characteristic name="RS/MS" typeId="58d2-b879-49c7-43bc">3+/3+</characteristic>
+            <characteristic name="L" typeId="bef7-942a-1a23-59f8">7+</characteristic>
+            <characteristic name="C" typeId="ce19-d3eb-6d64-97de">0</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Trail of darkness (Action)" id="6506-796f-101c-f213" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When this unit is selected to perform an action it may make this action instead.
+
+
+This unit makes a normal move then selects one objective marker within 3&quot;, open a rift on that objective until the end of the turn.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Ethereal form" id="3d18-d9c7-4e40-8356" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Attacks that target this unit can only succeed on wound rolls of 8.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Shifterbeast" id="1989-e0c0-585c-3fc2" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Monster" id="9d8b-5538-60dd-6266" primary="false" targetId="c038-626e-763d-0e2f"/>
+        <categoryLink name="Gateborn" id="8ddc-65ab-1025-29c2" primary="false" targetId="9dbc-c39e-ceac-480a"/>
+        <categoryLink name="Heavy Support" id="e87f-6bc0-6ff5-785c" primary="true" targetId="cd4f-0287-31b9-8659"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="10a6-c868-db09-c245" value="240"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Tear Open Reality" id="9093-89ff-d056-6be0" hidden="false" targetId="978e-aa39-2176-9390" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Shifterbeast" id="50e3-9e37-56c4-43ff" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">8&quot;</characteristic>
+            <characteristic name="H" typeId="d29d-cf75-fc2d-34a4">12</characteristic>
+            <characteristic name="T" typeId="450-a17e-9d5e-29da">10</characteristic>
+            <characteristic name="RS/MS" typeId="58d2-b879-49c7-43bc">N/A</characteristic>
+            <characteristic name="L" typeId="bef7-942a-1a23-59f8">+11</characteristic>
+            <characteristic name="C" typeId="ce19-d3eb-6d64-97de">4</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Titanic Limbs" id="e38a-43de-2cec-7863" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">D4+2</characteristic>
+            <characteristic name="MS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">12</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-3</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">D4+1</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Heavy, Cleave</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Eldrich Beam" id="1e7f-3dbb-a50b-35f6" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">36&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">D4+2</characteristic>
+            <characteristic name="RS" typeId="94d-8a98-cf90-183e">4+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">12</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D4+1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Heavy, Psionic</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Everchanging form" id="6761-b2d6-b944-59d5" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">During the strategy step, this unit can take one of 2 forms.
+
+
+Ranged form:
+Change this units save profile to 4+/6+.
+This unit cannot use its Titanic Limbs.
+
+
+Melee form:
+Change this units save profile to 6+/4+.
+This unit cannot use its Eldrich Beam.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Stomping Limps" id="6275-7b3e-ab40-b57d" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">4</characteristic>
+            <characteristic name="MS" typeId="95d1-95f-45b4-11d6">6+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">6</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+          </characteristics>
+        </profile>
+        <profile name="Spitting Energies" id="ca79-0b2b-e8c4-b902" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">2D4</characteristic>
+            <characteristic name="RS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">5</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Envelop, Ignores Cover, Psionic</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Pterrorhawks" id="9621-13d8-c7a2-2fc2" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Gateborn" id="7c82-3a34-b415-7903" primary="false" targetId="9dbc-c39e-ceac-480a"/>
+        <categoryLink name="Flying" id="dca0-e496-263a-42f1" primary="false" targetId="1c71-822b-5355-6e2b"/>
+        <categoryLink name="Beast" id="ec23-1663-e4d0-8b49" primary="true" targetId="9c40-6d9f-ec91-ebbd"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="10a6-c868-db09-c245" value="85"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Tear Open Reality" id="a058-b138-0931-e91c" hidden="false" targetId="978e-aa39-2176-9390" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Cloud of Beaks and Talons" id="7de3-ee58-2ad0-8d20" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">After this unit has activated, if it has made any type of move, any enemy unit this unit moved over suffers D4+1</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry name="Pterrorhawks" id="b273-8267-7528-da3c" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="5f9e-b42f-02ac-8012" field="selections" scope="parent" shared="true" type="min" value="10"/>
+            <constraint id="4af9-f597-e091-f240" field="selections" scope="parent" shared="true" type="max" value="10"/>
+          </constraints>
+          <profiles>
+            <profile name="Claws and Beaks" id="ee1d-0c44-60e1-c879" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                <characteristic name="MS" typeId="95d1-95f-45b4-11d6">7+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+              </characteristics>
+            </profile>
+            <profile name="Pterrorhawk" id="8a6e-89ae-46c3-068d" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
+              <characteristics>
+                <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">12&quot;</characteristic>
+                <characteristic name="H" typeId="d29d-cf75-fc2d-34a4">1</characteristic>
+                <characteristic name="T" typeId="450-a17e-9d5e-29da">2</characteristic>
+                <characteristic name="RS/MS" typeId="58d2-b879-49c7-43bc">5+/7+</characteristic>
+                <characteristic name="L" typeId="bef7-942a-1a23-59f8">13+</characteristic>
+                <characteristic name="C" typeId="ce19-d3eb-6d64-97de">1</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry name="Blood Knights" id="a714-2f90-6607-7769" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Troops" id="b3c5-6de9-4581-6224" primary="true" targetId="c9f9-68da-aaa8-0023"/>
+        <categoryLink name="Gateborn" id="54d4-bc8f-5779-74cc" primary="false" targetId="9dbc-c39e-ceac-480a"/>
+        <categoryLink name="Infantry" id="7a24-4a5e-b6f8-692f" primary="false" targetId="f38e-18f6-4d87-3d0f"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="10a6-c868-db09-c245" value="210"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Tear Open Reality" id="147b-bca5-405a-d85a" hidden="false" targetId="978e-aa39-2176-9390" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Greatshields" id="292f-c70c-590b-88c7" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit has a 7+ Shielded Save</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Blood Knights" id="03d8-f1ec-0b7b-3d6c" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
+            <characteristic name="H" typeId="d29d-cf75-fc2d-34a4">4</characteristic>
+            <characteristic name="T" typeId="450-a17e-9d5e-29da">6</characteristic>
+            <characteristic name="RS/MS" typeId="58d2-b879-49c7-43bc">6+/4+</characteristic>
+            <characteristic name="L" typeId="bef7-942a-1a23-59f8">9+</characteristic>
+            <characteristic name="C" typeId="ce19-d3eb-6d64-97de">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Keepers of the Rift" id="d3f8-a86d-d414-f5e1" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Whilst this unit is within 6&quot; of a Rift, it has a 8+ Resistance.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntries>
+        <selectionEntry name="Blood Knights" id="1fd1-973a-1edf-ea85" hidden="false" import="true" type="upgrade">
+          <constraints>
+            <constraint id="01dd-dc33-45b7-b7f8" field="selections" scope="parent" shared="true" type="min" value="5"/>
+            <constraint id="0e37-a54c-60e7-5f62" field="selections" scope="parent" shared="true" type="max" value="5"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Cleave" id="a685-99f0-518f-2b45" hidden="false" targetId="7e23-7832-d2c1-ea34" type="rule"/>
+          </infoLinks>
+          <profiles>
+            <profile name="Blades of Black blood" id="b4ee-09b9-0cd4-92a2" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
+              <characteristics>
+                <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                <characteristic name="A" typeId="2337-daa1-6682-b110">3</characteristic>
+                <characteristic name="MS" typeId="95d1-95f-45b4-11d6">4+</characteristic>
+                <characteristic name="S" typeId="ab33-d393-96ce-ccba">8</characteristic>
+                <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+                <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
+                <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Cleave</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry name="Uynworm" id="d831-c697-0cd5-2ac9" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Gateborn" id="5102-5555-fcf7-e9a9" primary="false" targetId="9dbc-c39e-ceac-480a"/>
+        <categoryLink name="Monster" id="d978-617b-74bf-464a" primary="false" targetId="c038-626e-763d-0e2f"/>
+        <categoryLink name="Heavy Support" id="aa0c-020c-7178-5be4" primary="true" targetId="cd4f-0287-31b9-8659"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="10a6-c868-db09-c245" value="210"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Heavy" id="b4f3-7889-66e7-522d" hidden="false" targetId="1202-10a8-78e9-4c67" type="rule"/>
+        <infoLink name="Envelop" id="73a2-4f8b-f966-b5ca" hidden="false" targetId="5edf-d619-23e0-9b56" type="rule"/>
+        <infoLink name="Blast " id="7844-5cf4-89e5-5c34" hidden="false" targetId="6c1f-1cf7-ff25-c99e" type="rule">
+          <modifiers>
+            <modifier field="name" join=" " type="append" value="2"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Ignores Cover" id="4bf5-4f68-441e-7c62" hidden="false" targetId="4640-43e7-30b-215a" type="rule"/>
+        <infoLink name="Explode" id="4e1b-a65d-d560-d451" hidden="false" targetId="b68a-5ded-65ac-98c" type="rule">
+          <modifiers>
+            <modifier field="name" join=" " type="append" value="D4"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Tear Open Reality" id="4834-d79f-49b2-d5eb" hidden="false" targetId="978e-aa39-2176-9390" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Uynworms" id="0f60-9fca-bf6a-c14b" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">-</characteristic>
+            <characteristic name="H" typeId="d29d-cf75-fc2d-34a4">18</characteristic>
+            <characteristic name="T" typeId="450-a17e-9d5e-29da">7</characteristic>
+            <characteristic name="RS/MS" typeId="58d2-b879-49c7-43bc">6+/5+</characteristic>
+            <characteristic name="L" typeId="bef7-942a-1a23-59f8">10+</characteristic>
+            <characteristic name="C" typeId="ce19-d3eb-6d64-97de">8</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Destruction from below" id="7648-69f7-3b59-a5ba" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit starts the game in reinforcements. When you may set this unit up anywhere on the board more than 3&quot; from enemy units. After this unit is set up, select each unit within 6&quot; and roll a D8, on a 5+ that unit suffers D4+1 Fatal wounds.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Uynworm maw" id="d2c4-1534-1829-6e9e" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">D8</characteristic>
+            <characteristic name="MS" typeId="95d1-95f-45b4-11d6">5+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">9</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">3</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Heavy</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Uynworm spew" id="a3fa-7c7f-1ce1-60ad" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">2D4+1</characteristic>
+            <characteristic name="RS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">0</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Envelop, Ignore Cover, Blast 2</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Razor Spines" id="7bde-7896-5c2f-2e07" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+            <characteristic name="RS" typeId="94d-8a98-cf90-183e">6+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">12</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-4</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">D8+1</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Dammed Shrine" id="3472-7bff-c587-aec1" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Gateborn" id="b39f-3aca-d54a-2a75" primary="false" targetId="9dbc-c39e-ceac-480a"/>
+        <categoryLink name="Monster" id="4571-b600-c099-1498" primary="false" targetId="c038-626e-763d-0e2f"/>
+        <categoryLink name="Flying" id="a025-ae6e-2ebe-8b22" primary="false" targetId="1c71-822b-5355-6e2b"/>
+        <categoryLink name="Heavy Support" id="1d71-b698-da8c-ef09" primary="true" targetId="cd4f-0287-31b9-8659"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="10a6-c868-db09-c245" value="100"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Accultist" id="cfc7-2a38-6da9-b063" hidden="false" targetId="0c1d-87ca-215c-e482" type="rule">
+          <modifiers>
+            <modifier field="name" join=" " type="append" value="2"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Tear Open Reality" id="1fd9-9ce3-8584-dea0" hidden="false" targetId="978e-aa39-2176-9390" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Dammed Shrine" id="f1ca-41ef-2c1e-7863" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">5&quot;</characteristic>
+            <characteristic name="H" typeId="d29d-cf75-fc2d-34a4">12</characteristic>
+            <characteristic name="T" typeId="450-a17e-9d5e-29da">7</characteristic>
+            <characteristic name="RS/MS" typeId="58d2-b879-49c7-43bc">4+/6+</characteristic>
+            <characteristic name="L" typeId="bef7-942a-1a23-59f8">N/A</characteristic>
+            <characteristic name="C" typeId="ce19-d3eb-6d64-97de">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="In the presence of evil" id="bd3a-b6ca-95bd-0458" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Whenever an enemy unit activates within 12&quot; of this unit it must make a leadership test, if it fails then friendly units gain +1 to attacks made against that unit.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Site of unstable power" id="5de2-3162-740f-82eb" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When ever an enemy unit makes a manifestation check within 12&quot; of this unit, -1 from the result.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Bilespewers" id="3fa8-9182-a286-70ec" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Gateborn" id="ef0e-46f1-ab5c-658f" primary="false" targetId="9dbc-c39e-ceac-480a"/>
+        <categoryLink name="Beast" id="ab4b-db43-7985-ac17" primary="true" targetId="9c40-6d9f-ec91-ebbd"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="10a6-c868-db09-c245" value="150"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Tear Open Reality" id="7d20-13b2-2801-a805" hidden="false" targetId="978e-aa39-2176-9390" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Contorting Flesh" id="7280-34ca-2b7b-3891" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This unit can move through any terrain as if it were not there.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Living stomachs" id="f276-4aec-b53a-af92" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Whenever an enemy unit starts or ends any move within 6&quot; of this unit, roll a D8, on a 6+ that unit suffers D4 mortal wounds.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Unit composition" id="5b91-5e69-df5c-ef24" hidden="false">
+          <constraints>
+            <constraint id="c863-e487-7738-7d64-min" field="selections" scope="parent" shared="true" type="min" value="1"/>
+            <constraint id="c863-e487-7738-7d64-max" field="selections" scope="parent" shared="true" type="max" value="1"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry name="3 Bile Spewers" id="c3ba-8256-9b5f-f99d" hidden="false" import="true" type="upgrade">
+              <selectionEntries>
+                <selectionEntry name="Bile Spewer" id="5be2-86d1-0427-6cb9" hidden="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint id="9b4f-46dc-0355-6baf" field="selections" scope="parent" shared="true" type="max" value="3"/>
+                    <constraint id="1bc5-e54f-cc57-a121" field="selections" scope="parent" shared="true" type="min" value="3"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Bilespewers" id="351e-4809-568a-0e4b" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
+                      <characteristics>
+                        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+                        <characteristic name="H" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
+                        <characteristic name="T" typeId="450-a17e-9d5e-29da">6</characteristic>
+                        <characteristic name="RS/MS" typeId="58d2-b879-49c7-43bc">7+/7+</characteristic>
+                        <characteristic name="L" typeId="bef7-942a-1a23-59f8">10</characteristic>
+                        <characteristic name="C" typeId="ce19-d3eb-6d64-97de">1</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Regurgitated Bile" id="2e9a-8af2-d437-1504" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">D8+2</characteristic>
+                        <characteristic name="RS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">2</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Small Arms, Anti-Infantry 3+, Envelop, Ignores Cover</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Rolling Mass" id="0747-5c12-d20c-a953" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">1</characteristic>
+                        <characteristic name="MS" typeId="95d1-95f-45b4-11d6">6+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+            <selectionEntry name="6 Bile Spewers" id="6adf-ef15-1aa2-3eac" hidden="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier field="10a6-c868-db09-c245" type="increment" value="150"/>
+              </modifiers>
+              <selectionEntries>
+                <selectionEntry name="Bile Spewer" id="665d-9847-175b-a049" hidden="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint id="d3ba-c79d-d5cb-b0e2" field="selections" scope="parent" shared="true" type="max" value="6"/>
+                    <constraint id="bcb2-0daf-168c-567a" field="selections" scope="parent" shared="true" type="min" value="6"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Bilespewers" id="db41-bfe2-2bb8-b48a" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
+                      <characteristics>
+                        <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">6&quot;</characteristic>
+                        <characteristic name="H" typeId="d29d-cf75-fc2d-34a4">5</characteristic>
+                        <characteristic name="T" typeId="450-a17e-9d5e-29da">6</characteristic>
+                        <characteristic name="RS/MS" typeId="58d2-b879-49c7-43bc">7+/7+</characteristic>
+                        <characteristic name="L" typeId="bef7-942a-1a23-59f8">10</characteristic>
+                        <characteristic name="C" typeId="ce19-d3eb-6d64-97de">1</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Regurgitated Bile" id="08c5-5d3b-f6fd-5574" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
+                      <characteristics>
+                        <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+                        <characteristic name="A" typeId="3bb-c35f-f54-fb08">D8+2</characteristic>
+                        <characteristic name="RS" typeId="94d-8a98-cf90-183e">N/A</characteristic>
+                        <characteristic name="S" typeId="2229-f494-25db-c5d3">2</characteristic>
+                        <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+                        <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+                        <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Small Arms, Anti-Infantry 3+, Envelop, Ignores Cover</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Rolling Mass" id="f81c-a80f-619f-ddad" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
+                      <characteristics>
+                        <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+                        <characteristic name="A" typeId="2337-daa1-6682-b110">1</characteristic>
+                        <characteristic name="MS" typeId="95d1-95f-45b4-11d6">6+</characteristic>
+                        <characteristic name="S" typeId="ab33-d393-96ce-ccba">3</characteristic>
+                        <characteristic name="AP" typeId="41a0-1301-112a-e2f2">0</characteristic>
+                        <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+                        <characteristic name="Keywords" typeId="893f-9000-ccf7-648e"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+    </selectionEntry>
+    <selectionEntry name="Gateborn Hero" id="f4f0-66a2-3c40-c9b6" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Hero" id="a1b1-c166-1c31-1ae4" primary="true" targetId="191d-de72-a047-c13b"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry name="Itty" id="752e-6512-2d7a-48c9" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Prime" id="2b82-b087-1b3a-8016" hidden="false" primary="true" targetId="0558-6d8b-f5d1-cca3"/>
+        <categoryLink name="General" id="05ac-43ca-9d4f-2450" hidden="false" primary="false" targetId="58f5-a263-2ca2-8342"/>
+        <categoryLink name="Gateborn" id="f0b0-b413-ae67-dbe7" hidden="false" primary="false" targetId="9dbc-c39e-ceac-480a"/>
+        <categoryLink name="Accultist" id="affb-01a7-ccf0-b38c" hidden="false" primary="false" targetId="20eb-d8a2-d24f-0b0f"/>
+        <categoryLink name="Infantry" id="3092-a9de-6e91-0096" hidden="false" primary="false" targetId="f38e-18f6-4d87-3d0f"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="10a6-c868-db09-c245" value="100"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Accultist" id="af22-160e-2994-8244" hidden="false" targetId="0c1d-87ca-215c-e482" type="rule">
+          <modifiers>
+            <modifier field="name" join=" " type="append" value="1"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Stealth" id="7b14-5ae9-a009-76d2" hidden="false" targetId="a8a0-8fe7-898-e0f3" type="rule">
+          <modifiers>
+            <modifier field="name" join=" " type="append" value="24&quot;"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Hard To Hit" id="5823-4535-b96c-7c1f" hidden="false" targetId="bec5-4288-34a6-ccfa" type="rule"/>
+        <infoLink name="Riftwalker" id="d078-d33a-e4a8-2d00" hidden="false" targetId="fd29-5173-a2a2-fb8e" type="profile"/>
+        <infoLink name="Precise" id="6cb0-7f50-c663-f90a" hidden="false" targetId="9143-31ae-e0a6-6007" type="rule"/>
+        <infoLink name="Small Arms" id="e1ec-c26c-ea7d-d521" hidden="false" targetId="fc8a-8c24-bae9-cc1c" type="rule"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Itty" id="289a-2b7f-7dae-307d" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;</characteristic>
+            <characteristic name="H" typeId="d29d-cf75-fc2d-34a4">6</characteristic>
+            <characteristic name="T" typeId="450-a17e-9d5e-29da">5</characteristic>
+            <characteristic name="RS/MS" typeId="58d2-b879-49c7-43bc">7+/4+</characteristic>
+            <characteristic name="L" typeId="bef7-942a-1a23-59f8">8+</characteristic>
+            <characteristic name="C" typeId="ce19-d3eb-6d64-97de">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Temporal Lynchpin (Aura):" id="801e-2352-da31-477e" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Friendly Accultist units within 9&quot; can reroll one dice when making a manifestation check.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Blade of the Gates" id="6be8-8193-5f2e-f11b" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">6</characteristic>
+            <characteristic name="MS" typeId="95d1-95f-45b4-11d6">+4</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">7</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-3</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">2</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Precise</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Blade of the Gates" id="b186-a06f-8cc4-de28" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">12&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">1</characteristic>
+            <characteristic name="RS" typeId="94d-8a98-cf90-183e">5+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">7</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-3</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Precise, Small Arms</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Claimer of Souls" id="d801-13d3-7969-ddd8" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">If any enemy unit in close combat range of this unit makes a retreat move, roll a D8. On a 3+ that unit suffers D4 Fatal wounds.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry name="Bitty" id="d552-0d68-1370-8ae1" hidden="false" import="true" type="upgrade">
+      <categoryLinks>
+        <categoryLink name="Prime" id="641b-c79b-45fb-4afc" hidden="false" primary="true" targetId="0558-6d8b-f5d1-cca3"/>
+        <categoryLink name="General" id="2109-e80b-b37e-8159" hidden="false" primary="false" targetId="58f5-a263-2ca2-8342"/>
+        <categoryLink name="Gateborn" id="a992-623a-370b-e7e8" hidden="false" primary="false" targetId="9dbc-c39e-ceac-480a"/>
+        <categoryLink name="Accultist" id="fda1-9fbd-5a94-ac8f" hidden="false" primary="false" targetId="20eb-d8a2-d24f-0b0f"/>
+        <categoryLink name="Infantry" id="73d2-a94f-00f0-d961" hidden="false" primary="false" targetId="f38e-18f6-4d87-3d0f"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Pts" typeId="10a6-c868-db09-c245" value="90"/>
+      </costs>
+      <infoLinks>
+        <infoLink name="Fatal Wounds" id="f4c5-55f2-e028-a19c" hidden="false" targetId="be1e-ac8e-1e2c-3528" type="rule"/>
+        <infoLink name="Hard To Hit" id="0c99-4def-6017-1e63" hidden="false" targetId="bec5-4288-34a6-ccfa" type="rule"/>
+        <infoLink name="Accultist" id="ec32-a9d0-1b8c-b2d4" hidden="false" targetId="0c1d-87ca-215c-e482" type="rule">
+          <modifiers>
+            <modifier field="name" join=" " type="append" value="2"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Tear Open Reality" id="2fd1-7e4b-6a10-9707" hidden="false" targetId="978e-aa39-2176-9390" type="rule"/>
+        <infoLink name="Stealth" id="10a4-2fec-8db2-a049" hidden="false" targetId="a8a0-8fe7-898-e0f3" type="rule">
+          <modifiers>
+            <modifier field="name" join=" " type="append" value="24&quot;"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Psionic" id="8732-2d4e-2417-c7c1" hidden="false" targetId="e9c4-2bb8-12ee-cd1b" type="rule"/>
+        <infoLink name="Precise" id="5c4b-3000-843d-fd2c" hidden="false" targetId="9143-31ae-e0a6-6007" type="rule"/>
+        <infoLink name="Riftwalker" id="e9be-e765-c7b4-722a" hidden="false" targetId="fd29-5173-a2a2-fb8e" type="profile"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Bitty" id="f822-085d-de8b-f2d2" hidden="false" typeId="c547-1836-d8a-ff4f" typeName="Unit">
+          <characteristics>
+            <characteristic name="M" typeId="e703-ecb6-5ce7-aec1">7&quot;</characteristic>
+            <characteristic name="H" typeId="d29d-cf75-fc2d-34a4">6</characteristic>
+            <characteristic name="T" typeId="450-a17e-9d5e-29da">5</characteristic>
+            <characteristic name="RS/MS" typeId="58d2-b879-49c7-43bc">4+/7+</characteristic>
+            <characteristic name="L" typeId="bef7-942a-1a23-59f8">8+</characteristic>
+            <characteristic name="C" typeId="ce19-d3eb-6d64-97de">3</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Staff of the Gates" id="4a9c-8234-e775-da2e" hidden="false" typeId="8a40-4aaa-c780-9046" typeName="Melee Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="914c-b413-91e3-a132">Melee</characteristic>
+            <characteristic name="A" typeId="2337-daa1-6682-b110">2</characteristic>
+            <characteristic name="MS" typeId="95d1-95f-45b4-11d6">6+</characteristic>
+            <characteristic name="S" typeId="ab33-d393-96ce-ccba">5</characteristic>
+            <characteristic name="AP" typeId="41a0-1301-112a-e2f2">-2</characteristic>
+            <characteristic name="D" typeId="3254-9fe6-d824-513e">1</characteristic>
+            <characteristic name="Keywords" typeId="893f-9000-ccf7-648e">Precise, Fatal Wounds, Psionic</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Staff of the Gates" id="c8cd-3044-a140-2d1e" hidden="false" typeId="f77d-b953-8fa4-b762" typeName="Ranged Weapons">
+          <characteristics>
+            <characteristic name="Range" typeId="9896-9419-16a1-92fc">24&quot;</characteristic>
+            <characteristic name="A" typeId="3bb-c35f-f54-fb08">4</characteristic>
+            <characteristic name="RS" typeId="94d-8a98-cf90-183e">3+</characteristic>
+            <characteristic name="S" typeId="2229-f494-25db-c5d3">6</characteristic>
+            <characteristic name="AP" typeId="9ead-8a10-520-de15">-2</characteristic>
+            <characteristic name="D" typeId="a354-c1c8-a745-f9e3">2</characteristic>
+            <characteristic name="Keywords" typeId="7f1b-8591-2fcf-d01c">Precise, Fatal Wounds, Psionic</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Marked for Death" id="2366-8c87-f8f0-0e09" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">After this model has resolved any attacks, select one enemy unit hit by those attacks. Friendly Gateborn units that target that unit get +1AP on their attacks until end of turn.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Temporal Lynchpin (Aura):" id="302a-6c14-a277-af17" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Friendly Accultist units within 9&quot; can reroll one dice when making a manifestation check.</characteristic>
+          </characteristics>
+        </profile>
+        <profile name="Bitty" id="b2fa-2532-291f-3da9" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+          <characteristics>
+            <characteristic name="Description" typeId="9b8f-694b-e5e-b573"/>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup name="Riftwalker" id="3e3b-a98f-d10a-27e9" hidden="false">
+      <constraints>
+        <constraint id="5d1e-f814-f3a2-7e99" field="selections" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry name="Thunderous Impact" id="9e24-8c42-6877-71c7" hidden="false" import="true" type="upgrade">
+          <profiles>
+            <profile name="Thunderous Impact" id="1bcd-fcde-c7e9-d97c" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Once per turn, after this model has performed an action, pick one enemy unit within Close Combat Range and roll a number of D8 equal to its remaining health. For each 6+ that unit suffers one fatal wound to a maximum of 6.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="Walking Terror" id="3910-61a2-ee7e-b23b" hidden="false" import="true" type="upgrade">
+          <profiles>
+            <profile name="Walking Terror (Aura):" id="b67a-1d89-0138-536f" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Enemy units within 9&quot; of this model suffer -2 to any leadership tests.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="Immovable" id="2150-29dd-3ce2-c6df" hidden="false" import="true" type="upgrade">
+          <profiles>
+            <profile name="Immovable" id="8bcf-24c8-f96b-ef4a" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">While this model is within range of an objective marker, it has a 6+ Resistance.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Boons of War (Gateborn)" id="a8ca-6ec0-5610-9a7c" hidden="false">
+      <constraints>
+        <constraint id="c8a9-e7f3-da83-54e1" field="selections" scope="parent" shared="true" type="max" value="1"/>
+        <constraint id="c2a0-f949-a81c-aa37" field="selections" scope="parent" shared="true" type="min" value="1"/>
+      </constraints>
+      <modifiers>
+        <modifier field="hidden" type="set" value="true">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition childId="daf6-3b79-75b1-6b0b" field="selections" scope="parent" shared="true" type="equalTo" value="0"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+      </modifiers>
+      <selectionEntries>
+        <selectionEntry name="Infused Weapon" id="e1a2-748e-b8b0-9dfb" hidden="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier field="hidden" type="set" value="true">
+              <conditions>
+                <condition childId="3df4-5e30-abe3-6215" field="selections" includeChildSelections="true" scope="force" shared="true" type="equalTo" value="0"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Infused Weapon" id="b27d-51d3-5b1d-2bd5" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">One melee weapon gains [Unstable] and [Fatal Wounds]</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="Primordial Armour" id="2a41-dca7-231b-9ef6" hidden="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier field="hidden" type="set" value="true">
+              <conditions>
+                <condition childId="3df4-5e30-abe3-6215" field="selections" includeChildSelections="true" scope="force" shared="true" type="equalTo" value="0"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Primordial Armour" id="8fda-9762-68bd-eb08" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Add one to any Ranged and Melee saves made by this model.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="Unbound Creation" id="a2c4-ecc2-4886-082c" hidden="false" import="true" type="upgrade">
+          <modifiers>
+            <modifier field="hidden" type="set" value="true">
+              <conditions>
+                <condition childId="3df4-5e30-abe3-6215" field="selections" includeChildSelections="true" scope="force" shared="true" type="equalTo" value="0"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <profiles>
+            <profile name="Unbound Creation" id="326f-81c2-e32f-347f" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">This model gains the [Tactical Insertion] ability.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Detachment" id="36cf-28eb-c446-0566" hidden="false">
+      <categoryLinks>
+        <categoryLink name="Configuration" id="1243-da9e-1231-00be" hidden="false" primary="true" targetId="c708-30bf-1ea7-3e08"/>
+      </categoryLinks>
+      <constraints>
+        <constraint id="f23c-5d0c-fb33-15de" field="selections" scope="parent" shared="true" type="min" value="1"/>
+        <constraint id="bbfc-2745-c0ea-aa1f" field="selections" scope="parent" shared="true" type="max" value="1"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry name="Horrors beyond comprehension" id="3df4-5e30-abe3-6215" hidden="false" import="true" type="upgrade">
+          <profiles>
+            <profile name="Rifts of Madness" id="5bba-dff9-ee64-479e" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Enemy units within range of an objective marker you control suffer -1 to all leadership tests.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Gatespace traversal" id="385c-24c3-ce1b-c301" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">In the Strategy step, select one friendly GATEBORN unit within range of a Rift marker and place that unit into Reinforcements. During the Reinforcements step any GATEBORN units may be set up wholly within range of Rift markers but cannot be set up within Close Combat Range of enemy units.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="Swarms from beyond" id="045f-90a3-2746-4858" hidden="false" import="true" type="upgrade">
+          <profiles>
+            <profile name="Boundless Seas of incorporeality " id="a4e2-be84-70cc-e1a8" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Friendly Infantry and Swarm units you control have the Restistance 8+ ability.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Force Changes" id="edab-c33d-43e5-7099" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When taking this detachment, your Army may contain:
++2 units with the Troops keyword.
+-2 units with the Heavy Support Keyword</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Ever present, ever watching" id="fa29-70b8-920e-e4c7" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Enemy units within range of objective markers you control have -1 to their control characteristic.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry name="As reality unravels" id="3358-5948-7d52-3203" hidden="false" import="true" type="upgrade">
+          <profiles>
+            <profile name="Gaze upon endless misunderstanding" id="c326-3445-eae4-71e7" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">Your army gains increasing abilities as the Temporal Instability count rises.
+
+
+1: Gateborn units in your army add 1 to leadership rolls.
+2-3: Gateborn units in your army can be targeted by the Reroll requisition without paying the requisition cost.
+4-5: Attacks made against Gateborn units in your army have -1 to hit rolls.
+6-7: Gateborn units in your army gain +2 to manifestation tests.
+8-9: At the strategy phase, friendly Gateborn Accultist units in your army regain D4+1 wounds.
+10+: Enemy units that start or end an action within 6&quot; take D4+1 fatal wounds.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Invert Polarity (Spell)" id="0aa0-d3f5-cd4b-3c65" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When a friendly Accultist unit activates it may cast this spell.
+
+
+Invert Polarity (Cost: 7)
+
+
+Effect: Increase the Temporal Instability count by 1.</characteristic>
+              </characteristics>
+            </profile>
+            <profile name="Force Changes" id="bdf2-a8c1-f072-aaba" hidden="false" typeId="9cc3-6d83-4dd3-9b64" typeName="Abilities">
+              <characteristics>
+                <characteristic name="Description" typeId="9b8f-694b-e5e-b573">When taking this detachment, your Army may contain:
++2 units with the Prime keyword.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+</catalogue>
